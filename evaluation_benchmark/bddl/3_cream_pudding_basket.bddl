@@ -1,0 +1,83 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare a serving arrangement with cream, pudding and basket)
+    (:regions
+      (basket_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.04 0.18 0.0 0.22)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+      (cream_cheese_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.04 -0.04 0.0 0.0)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (chocolate_pudding_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.04 -0.26 0.0 -0.22)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (contain_region
+          (:target basket_1)
+      )
+    )
+
+  (:fixtures
+    coffee_table - coffee_table
+  )
+
+  (:objects
+    basket_1 - basket
+    cream_cheese_1 - cream_cheese
+    chocolate_pudding_1 - chocolate_pudding
+  )
+
+  (:obj_of_interest
+    cream_cheese_1
+    basket_1
+    chocolate_pudding_1
+  )
+
+  (:init
+    (On basket_1 coffee_table_basket_init_region)
+    (On cream_cheese_1 coffee_table_cream_cheese_init_region)
+    (On chocolate_pudding_1 coffee_table_chocolate_pudding_init_region)
+  )
+
+  (:goal
+    (And 
+        (In cream_cheese_1 basket_1_contain_region) 
+        (In chocolate_pudding_1 basket_1_contain_region)
+    )
+  )
+
+)

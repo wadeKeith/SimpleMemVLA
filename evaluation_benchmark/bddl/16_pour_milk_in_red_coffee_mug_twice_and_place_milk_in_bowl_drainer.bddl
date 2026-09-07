@@ -1,0 +1,87 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare the coffee serving area by organizing tableware and cleaning out any residual liquid)
+    (:regions
+      (bowl_drainer_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.1575 0.53 -0.11750000000000001 0.5700000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+      (red_coffee_mug_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.15380754917409206 -0.06338066182964573 0.19380754917409204 -0.023380661829645728)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (milk_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.1215646595275788 -0.1962616771755901 -0.0815646595275788 -0.1562616771755901)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (left_region
+          (:target bowl_drainer_1)
+      )
+      (right_region
+          (:target bowl_drainer_1)
+      )
+    )
+
+  (:fixtures
+    bowl_drainer_1 - bowl_drainer
+    coffee_table - coffee_table
+  )
+
+  (:objects
+    milk_1 - milk
+    red_coffee_mug_1 - red_coffee_mug
+  )
+
+  (:obj_of_interest
+    bowl_drainer_1
+    red_coffee_mug_1
+    milk_1
+  )
+
+  (:init
+    (On bowl_drainer_1 coffee_table_bowl_drainer_init_region)
+    (On red_coffee_mug_1 coffee_table_red_coffee_mug_init_region)
+    (On milk_1 coffee_table_milk_init_region)
+  )
+
+  (:goal
+    (And 
+        (Or 
+            (In milk_1 bowl_drainer_1_left_region)
+            (In milk_1 bowl_drainer_1_right_region)
+        )
+    )
+  )
+)

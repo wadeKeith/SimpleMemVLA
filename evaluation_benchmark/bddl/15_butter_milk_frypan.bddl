@@ -1,0 +1,82 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare the coffee serving area by organizing tableware and cleaning out any residual liquid)
+    (:regions
+      (butter_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.08973128873924084 -0.22488715709641463 0.12973128873924084 -0.18488715709641465)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (milk_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.1215646595275788 -0.1962616771755901 -0.0815646595275788 -0.1562616771755901)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (frypan_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.02 0.10 0.02 0.13)
+          )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+          )
+          )
+      )
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (contain_region
+          (:target frypan_1)
+      )
+    )
+
+  (:fixtures
+    coffee_table - coffee_table
+  )
+
+  (:objects
+    milk_1 - milk
+    butter_1 - butter
+    frypan_1 - chefmate_8_frypan
+  )
+
+  (:obj_of_interest
+    butter_1
+    milk_1
+    frypan_1
+  )
+
+  (:init
+    (On butter_1 coffee_table_butter_init_region)
+    (On milk_1 coffee_table_milk_init_region)
+    (On frypan_1 coffee_table_frypan_init_region)
+  )
+
+  (:goal
+    (And 
+        (In butter_1 frypan_1_contain_region) 
+        (On milk_1 coffee_table_milk_init_region) 
+    )
+  )
+)

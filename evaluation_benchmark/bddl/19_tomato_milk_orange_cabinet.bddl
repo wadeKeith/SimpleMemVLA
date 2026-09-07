@@ -1,0 +1,115 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare a snack tray with chocolate pudding and wine)
+    (:regions
+      (wooden_cabinet_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.02 -0.25 0.02 -0.05)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+
+      (wooden_cabinet_2_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.02 0.2 0.02 0.4)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+
+      (plate_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.030313430828717774 0.50221794284327724 0.009686569171282227 0.5422179428432773)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+
+
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+
+      
+
+
+      (top_side
+          (:target wooden_cabinet_1)
+      )
+      (top_region
+          (:target wooden_cabinet_1)
+      )
+      (middle_region
+          (:target wooden_cabinet_1)
+      )
+      (bottom_region
+          (:target wooden_cabinet_1)
+      )
+      
+      (top_side
+          (:target wooden_cabinet_2)
+      )
+    )
+
+  (:fixtures
+    coffee_table - coffee_table
+    wooden_cabinet_1 - wooden_cabinet
+    wooden_cabinet_2 - wooden_cabinet
+  )
+
+  (:objects
+    tomato_sauce_1 - tomato_sauce
+    milk_1 - milk
+    plate_1 - plate
+    orange_juice_1 - orange_juice
+  )
+
+  (:obj_of_interest
+    wooden_cabinet_1
+    wooden_cabinet_2
+    milk_1
+    plate_1
+    tomato_sauce_1
+    orange_juice_1
+
+  )
+
+  (:init
+    (On wooden_cabinet_1 coffee_table_wooden_cabinet_init_region)
+    (On wooden_cabinet_2 coffee_table_wooden_cabinet_2_init_region)
+    (On plate_1 coffee_table_plate_init_region)
+    (In milk_1 wooden_cabinet_1_top_side) 
+    (In tomato_sauce_1 wooden_cabinet_1_top_side)
+    (In orange_juice_1 wooden_cabinet_1_top_side)
+  )
+
+  (:goal
+    (And 
+        (In milk_1 wooden_cabinet_2_top_side) 
+        (In tomato_sauce_1 wooden_cabinet_2_top_side)
+        (In orange_juice_1 wooden_cabinet_2_top_side)
+    )
+  )
+
+)

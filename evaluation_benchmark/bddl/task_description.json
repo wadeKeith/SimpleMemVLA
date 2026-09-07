@@ -1,0 +1,34 @@
+[
+  {
+    "step": "Step: Pick up the butter from coffee table",
+    "object": "butter"
+  },
+  {
+    "step": "Step: Place the butter onto the rack",
+    "object": "butter"
+  },
+  {
+    "step": "Step: Pick up the red coffee mug from coffee table",
+    "object": "red_coffee_mug"
+  },
+  {
+    "step": "Step: Place the red coffee mug onto the rack",
+    "object": "red_coffee_mug"
+  },
+  {
+    "step": "Step: Pick up the milk from coffee table",
+    "object": "milk"
+  },
+  {
+    "step": "Step: Pour out the milk from the milk container",
+    "object": "milk"
+  },
+  {
+    "step": "Step: Place down the milk onto coffee table",
+    "object": "milk"
+  },
+  {
+    "step": "Step: Open the wooden cabinet top region",
+    "object": null
+  }
+]

@@ -1,0 +1,13 @@
+classify_blocks: 1500
+place_object_box: null
+storage_blocks: 1500
+observe_and_pickup: 250
+rearrange_blocks: 700
+cover_blocks: 1500
+swap_T: 600
+press_button: 1500
+swap_blocks: 1000
+blocks_ranking_try: 3500
+place_block_mat: 1500
+put_back_block: 500
+battery_try: 1000

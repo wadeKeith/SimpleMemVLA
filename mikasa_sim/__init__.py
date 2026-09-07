@@ -1,0 +1,6 @@
+
+from mikasa_sim._compat import apply_fla_torch_compat
+from mikasa_sim._sapien_env import prepare_sapien_runtime
+
+apply_fla_torch_compat()
+prepare_sapien_runtime()

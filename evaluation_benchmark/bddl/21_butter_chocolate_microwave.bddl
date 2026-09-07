@@ -1,0 +1,89 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare a microwaved snack bowl  )
+    (:regions
+      (microwave_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.02 0.53 0.02 0.5700000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (6.283185307179586 6.283185307179586)
+            )
+          )
+      )
+      (butter_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.14719133415004915 -0.11541956553388293 0.18719133415004913 -0.07541956553388292)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (chocolate_pudding_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.14719133415004915 -0.21541956553388293 0.18719133415004913 -0.17541956553388292)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (top_side
+          (:target microwave_1)
+      )
+      (heating_region
+          (:target microwave_1)
+      )
+    )
+
+  (:fixtures
+    coffee_table - coffee_table
+    microwave_1 - microwave
+  )
+
+  (:objects
+    butter_1 - butter
+    chocolate_pudding_1 - chocolate_pudding
+    cookies_1 - cookies
+  )
+
+  (:obj_of_interest
+    butter_1
+    chocolate_pudding_1
+    microwave_1
+  )
+
+  (:init
+    (On microwave_1 coffee_table_microwave_init_region)
+    (On butter_1 coffee_table_cookies_init_region)
+    (On chocolate_pudding_1 coffee_table_chocolate_pudding_init_region)
+    (On butter_1 coffee_table_butter_init_region)
+  )
+
+  (:goal
+    (And 
+        (In butter_1 microwave_1_heating_region) 
+        (In chocolate_pudding_1 microwave_1_heating_region)
+    )
+  )
+
+)

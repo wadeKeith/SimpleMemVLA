@@ -1,0 +1,306 @@
+{
+  "env_id": "VideoPlaceOrder",
+  "record_count": 50,
+  "records": [
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 0,
+      "seed": 610002,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 1,
+      "seed": 610100,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 2,
+      "seed": 610203,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 3,
+      "seed": 610300,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 4,
+      "seed": 610402,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 5,
+      "seed": 610500,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 6,
+      "seed": 610601,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 7,
+      "seed": 610701,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 8,
+      "seed": 610801,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 9,
+      "seed": 610901,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 10,
+      "seed": 611000,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 11,
+      "seed": 611101,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 12,
+      "seed": 611201,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 13,
+      "seed": 611301,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 14,
+      "seed": 611402,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 15,
+      "seed": 611501,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 16,
+      "seed": 611601,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 17,
+      "seed": 611700,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 18,
+      "seed": 611802,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 19,
+      "seed": 611901,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 20,
+      "seed": 612001,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 21,
+      "seed": 612100,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 22,
+      "seed": 612201,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 23,
+      "seed": 612304,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 24,
+      "seed": 612400,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 25,
+      "seed": 612500,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 26,
+      "seed": 612600,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 27,
+      "seed": 612701,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 28,
+      "seed": 612800,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 29,
+      "seed": 612900,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 30,
+      "seed": 613001,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 31,
+      "seed": 613100,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 32,
+      "seed": 613202,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 33,
+      "seed": 613301,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 34,
+      "seed": 613401,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 35,
+      "seed": 613500,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 36,
+      "seed": 613601,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 37,
+      "seed": 613702,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 38,
+      "seed": 613800,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 39,
+      "seed": 613900,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 40,
+      "seed": 614000,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 41,
+      "seed": 614100,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 42,
+      "seed": 614200,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 43,
+      "seed": 614300,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 44,
+      "seed": 614401,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 45,
+      "seed": 614500,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 46,
+      "seed": 614601,
+      "difficulty": "medium"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 47,
+      "seed": 614701,
+      "difficulty": "hard"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 48,
+      "seed": 614801,
+      "difficulty": "easy"
+    },
+    {
+      "task": "VideoPlaceOrder",
+      "episode": 49,
+      "seed": 614900,
+      "difficulty": "easy"
+    }
+  ]
+}

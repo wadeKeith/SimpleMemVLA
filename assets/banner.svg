@@ -1,0 +1,98 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F7FA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1600" height="420" fill="url(#bg)"/>
+
+  <!-- ============ token timeline (top) ============ -->
+  <line x1="140" y1="118" x2="1180" y2="118" stroke="#D7DEE8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- vision tokens: history frames, fading in from the past -->
+  <g>
+    <rect x="150" y="90" width="44" height="56" rx="8" fill="#A9C6E8" opacity="0.35"/>
+    <rect x="204" y="90" width="44" height="56" rx="8" fill="#A9C6E8" opacity="0.45"/>
+    <rect x="258" y="90" width="44" height="56" rx="8" fill="#A9C6E8" opacity="0.55"/>
+    <rect x="312" y="90" width="44" height="56" rx="8" fill="#A9C6E8" opacity="0.65"/>
+    <rect x="366" y="90" width="44" height="56" rx="8" fill="#A9C6E8" opacity="0.75"/>
+    <rect x="420" y="90" width="44" height="56" rx="8" fill="#A9C6E8" opacity="0.85"/>
+    <rect x="474" y="90" width="44" height="56" rx="8" fill="#A9C6E8" opacity="0.95"/>
+    <rect x="528" y="90" width="44" height="56" rx="8" fill="#A9C6E8"/>
+    <rect x="582" y="90" width="44" height="56" rx="8" fill="#A9C6E8"/>
+    <rect x="636" y="90" width="44" height="56" rx="8" fill="#A9C6E8"/>
+  </g>
+
+  <!-- plaintext timestamps under selected frames -->
+  <g font-family="DejaVu Sans Mono, Menlo, Consolas, monospace" font-size="20" fill="#7C8DA6">
+    <text x="172" y="178" text-anchor="middle">&lt;0.8 s&gt;</text>
+    <text x="388" y="178" text-anchor="middle">&lt;13.2 s&gt;</text>
+    <text x="604" y="178" text-anchor="middle">&lt;26.5 s&gt;</text>
+  </g>
+
+  <!-- language tokens -->
+  <g>
+    <rect x="712" y="90" width="44" height="56" rx="8" fill="#BFDCBC"/>
+    <rect x="766" y="90" width="44" height="56" rx="8" fill="#BFDCBC"/>
+    <rect x="820" y="90" width="44" height="56" rx="8" fill="#BFDCBC"/>
+  </g>
+  <text x="788" y="178" text-anchor="middle" font-family="DejaVu Sans, Helvetica, Arial, sans-serif"
+        font-size="20" font-style="italic" fill="#6F8A6C">task</text>
+
+  <!-- generated sub-task tokens -->
+  <g>
+    <rect x="896" y="90" width="44" height="56" rx="8" fill="#D9603B"/>
+    <rect x="950" y="90" width="44" height="56" rx="8" fill="#D9603B"/>
+    <rect x="1004" y="90" width="44" height="56" rx="8" fill="#D9603B"/>
+  </g>
+  <text x="972" y="178" text-anchor="middle" font-family="DejaVu Sans, Helvetica, Arial, sans-serif"
+        font-size="20" font-style="italic" fill="#B24B2E">sub-task</text>
+
+  <!-- arrow to the arm -->
+  <line x1="1072" y1="118" x2="1152" y2="118" stroke="#8B9BB0" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 1168 118 l -18 -11 v 22 z" fill="#8B9BB0"/>
+
+  <!-- minimal robot arm reaching the remembered cube -->
+  <g>
+    <!-- base -->
+    <rect x="1240" y="158" width="80" height="14" rx="7" fill="#3D4C5E"/>
+    <rect x="1272" y="126" width="16" height="34" rx="6" fill="#3D4C5E"/>
+    <!-- links -->
+    <g stroke="#3D4C5E" stroke-width="12" stroke-linecap="round" fill="none">
+      <path d="M 1280 130 L 1318 86"/>
+      <path d="M 1318 86 L 1374 100"/>
+    </g>
+    <!-- joints -->
+    <circle cx="1280" cy="130" r="10" fill="#3D4C5E"/>
+    <circle cx="1318" cy="86" r="9" fill="#3D4C5E"/>
+    <!-- gripper fingers, open around the cube -->
+    <g stroke="#3D4C5E" stroke-width="9" stroke-linecap="round" fill="none">
+      <path d="M 1374 100 l 24 -15"/>
+      <path d="M 1374 100 l 24 15"/>
+    </g>
+  </g>
+  <!-- the remembered target -->
+  <rect x="1404" y="86" width="28" height="28" rx="6" fill="#D9603B"/>
+
+  <!-- ============ wordmark ============ -->
+  <g font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-weight="bold" font-size="92">
+    <text x="398" y="290" fill="#2E3D50">Simple</text>
+    <text x="751" y="290" fill="#D9603B">Mem</text>
+    <text x="1001" y="290" fill="#2E3D50">VLA</text>
+  </g>
+
+  <!-- tagline -->
+  <text x="800" y="342" text-anchor="middle"
+        font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="30" fill="#5C6B80">
+    Memory as Native-Video Context for Vision-Language-Action Models
+  </text>
+
+  <!-- footline motto -->
+  <text x="800" y="386" text-anchor="middle"
+        font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="22" font-style="italic" fill="#97A6BA">
+    A minute of history is not too much input — nothing needs to be abstracted away.
+  </text>
+</svg>

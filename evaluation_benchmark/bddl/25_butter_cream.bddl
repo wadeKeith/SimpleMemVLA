@@ -1,0 +1,94 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Place two plates on the coffee table with butter and cream cheese on the first plate)
+  (:regions
+    (plate1_init_region
+        (:target coffee_table)
+        (:ranges (
+            (0.10 -0.25 0.25 -0.10)
+          )
+        )
+        (:yaw_rotation (
+            (0.0 0.0)
+          )
+        )
+    )
+    (plate2_init_region
+        (:target coffee_table)
+        (:ranges (
+            (0.10 0.05 0.25 0.20)
+          )
+        )
+        (:yaw_rotation (
+            (0.0 0.0)
+          )
+        )
+    )
+    (butter_init_region
+        (:target coffee_table)
+        (:ranges (
+            (0.14 -0.24 0.26 -0.22)
+          )
+        )
+        (:yaw_rotation (
+            (0.0 0.0)
+          )
+        )
+    )
+    (cream_cheese_init_region
+        (:target coffee_table)
+        (:ranges (
+            (0.14 -0.165 0.26 -0.150)
+          )
+        )
+        (:yaw_rotation (
+            (0.0 0.0)
+          )
+        )
+    )
+    (table_region
+        (:target coffee_table)
+        (:ranges (
+            (-2 -2 2 2)
+          )
+        )
+        (:yaw_rotation (
+            (0.0 0.0)
+          )
+        )
+    )
+  )
+
+  (:fixtures
+    coffee_table - coffee_table
+  )
+
+  (:objects
+    plate_1 - plate
+    plate_2 - plate
+    butter_1 - butter
+    cream_cheese_1 - cream_cheese
+  )
+
+  (:obj_of_interest
+    plate_1
+    plate_2
+    butter_1
+    cream_cheese_1
+  )
+
+  (:init
+    (On plate_1 coffee_table_plate1_init_region)
+    (On plate_2 coffee_table_plate2_init_region)
+    (On butter_1 coffee_table_butter_init_region)
+    (On cream_cheese_1 coffee_table_cream_cheese_init_region)
+  )
+
+  (:goal
+    (And
+      (On butter_1 plate_2)
+      (On cream_cheese_1 plate_2)
+    )
+  )
+
+)

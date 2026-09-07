@@ -1,0 +1,30 @@
+__pycache__/
+*.pyc
+*.log
+nohup.out
+MUJOCO_LOG.TXT
+.vscode/
+
+# Run artifacts
+logs/
+wandb/
+rollouts/
+checkpoints/
+checkpoint-*/
+
+# Local data / model weights (see README for download instructions)
+data/datasets/
+Qwen/
+keithyc/
+*.npy
+
+# Heavy benchmark payloads fetched by scripts/install/ (code is vendored, data is not)
+rmbench_sim/rmbench/assets/
+rmbench_sim/rmbench/envs/curobo/
+evaluation_benchmark/libero_fork/
+.libero_robomemarena/
+
+# third_party: MIKASA-Robo is vendored (tracked); ManiSkill and LIBERO are
+# cloned by their install scripts.
+third_party/*
+!third_party/MIKASA-Robo

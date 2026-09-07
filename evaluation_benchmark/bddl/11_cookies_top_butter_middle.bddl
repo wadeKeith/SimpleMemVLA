@@ -1,0 +1,168 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare the coffee serving area by organizing tableware and cleaning out any residual liquid)
+    (:regions
+      (bowl_drainer_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.1575 0.53 -0.11750000000000001 0.5700000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+      (wooden_cabinet_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.11750000000000001 0.53 0.1575 0.5700000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (6.283185307179586 6.283185307179586)
+            )
+          )
+      )
+      (rack_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.02 -0.5700000000000001 0.02 -0.53)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+      (butter_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.08973128873924084 -0.22488715709641463 0.12973128873924084 -0.18488715709641465)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (milk_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.1215646595275788 -0.1962616771755901 -0.0815646595275788 -0.1562616771755901)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (bbq_sauce_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.32 -0.02 -0.27999999999999997 0.02)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (cookies_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.20 -0.35 0.24 -0.31)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (chocolate_pudding_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.24 -0.35 -0.20 -0.31)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (left_region
+          (:target bowl_drainer_1)
+      )
+      (right_region
+          (:target bowl_drainer_1)
+      )
+      (top_side
+          (:target wooden_cabinet_1)
+      )
+      (top_region
+          (:target wooden_cabinet_1)
+      )
+      (middle_region
+          (:target wooden_cabinet_1)
+      )
+      (bottom_region
+          (:target wooden_cabinet_1)
+      )
+    )
+
+  (:fixtures
+    bowl_drainer_1 - bowl_drainer
+    coffee_table - coffee_table
+    wooden_cabinet_1 - wooden_cabinet_tall_bottom
+  )
+
+  (:objects
+    bbq_sauce_1 - bbq_sauce
+    milk_1 - milk
+    butter_1 - butter
+    rack_1 - rack
+    cream_cheese_1 - cream_cheese
+    cookies_1 - cookies
+    chocolate_pudding_1 - chocolate_pudding
+  )
+
+  (:obj_of_interest
+    wooden_cabinet_1
+    butter_1
+    rack_1
+    milk_1
+    bowl_drainer_1
+    cookies_1
+    chocolate_pudding_1
+  )
+
+  (:init
+    (On bowl_drainer_1 coffee_table_bowl_drainer_init_region)
+    (On wooden_cabinet_1 coffee_table_wooden_cabinet_init_region)
+    (On rack_1 coffee_table_rack_init_region)
+    (On butter_1 coffee_table_butter_init_region)
+    (On milk_1 coffee_table_milk_init_region)
+    (On bbq_sauce_1 coffee_table_bbq_sauce_init_region)
+    (In cream_cheese_1 wooden_cabinet_1_top_region)
+    (On cookies_1 coffee_table_cookies_init_region)
+    (On chocolate_pudding_1 coffee_table_chocolate_pudding_init_region)
+  )
+
+  (:goal
+    (And 
+        (In cookies_1 wooden_cabinet_1_top_region) 
+        (In butter_1 wooden_cabinet_1_middle_region) 
+    )
+  )
+)

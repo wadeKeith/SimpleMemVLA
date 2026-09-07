@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simplememvla"
+version = "0.1.0"
+description = "SimpleMemVLA: a Qwen3.5 VLM (sub-task) + DiT flow-matching action head with long visual history, trained and evaluated on five memory-centric robot-manipulation benchmarks."
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+  "torch==2.4.1",
+  "torchvision==0.19.1",
+  "numpy>=1.26,<2",
+  "transformers>=5.11",
+  "accelerate>=1.7.0",
+  "deepspeed>=0.15.0",
+  "Pillow>=10.0",
+  "safetensors>=0.6",
+  "termcolor>=2.4",
+  "datasets>=4.0",
+  "huggingface_hub>=1.0",
+  "pyarrow>=15.0",
+  "pandas>=2.0",
+  "av>=15.0",
+  "draccus>=0.8",
+  "jsonlines>=4.0",
+  "imageio[ffmpeg]>=2.37",
+  "tqdm>=4.66",
+  "wandb>=0.17",
+  "modelscope",
+]
+
+[tool.setuptools.packages.find]
+include = ["simplememvla*"]

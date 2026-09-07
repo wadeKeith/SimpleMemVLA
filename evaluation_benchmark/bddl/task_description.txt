@@ -1,0 +1,25 @@
+Task: After placing the butter and mug on the rack, pour in the milk, and check the wooden cabinet top region for any previously handled objects, placing them on the table if found.
+Step: Pick up the butter from coffee table
+[0, 291]
+Related Objects: butter
+Step: Place the butter onto the rack
+[291, 465]
+Related Objects: butter, rack
+Step: Pick up the red coffee mug from coffee table
+[465, 686]
+Related Objects: red coffee mug
+Step: Place the red coffee mug onto the rack
+[686, 1005]
+Related Objects: red coffee mug, rack
+Step: Pick up the milk from coffee table
+[1005, 1441]
+Related Objects: milk
+Step: Pour out the milk from the milk container
+[1441, 1646]
+Related Objects: milk
+Step: Place down the milk onto coffee table
+[1646, 1751]
+Related Objects: milk, coffee table
+Step: Open the wooden cabinet top region
+[1751, 2030]
+Related Objects: wooden cabinet

@@ -1,0 +1,95 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare a serving arrangement with sauces and drinks)
+    (:regions
+      (chefmate_8_frypan_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.09999999999999999 0.53 0.13999999999999999 0.5700000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (6.283185307179586 6.283185307179586)
+            )
+          )
+      )
+      (wooden_tray_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.02 -0.5700000000000001 0.02 -0.53)
+            )
+          )
+          (:yaw_rotation (
+              (3.141592653589793 3.141592653589793)
+            )
+          )
+      )
+      (wine_bottle_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.18491448918922607 0.21896231967946875 -0.1449144891892261 0.25896231967946876)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (white_yellow_mug_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.016806389414873935 0.22745663450005946 0.05680638941487394 0.26745663450005946)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (contain_region
+          (:target wooden_tray_1)
+      )
+    )
+
+  (:fixtures
+    coffee_table - coffee_table
+  )
+
+  (:objects
+    chefmate_8_frypan_1 - chefmate_8_frypan
+    white_yellow_mug_1 - white_yellow_mug
+    wine_bottle_1 - wine_bottle
+    wooden_tray_1 - wooden_tray
+  )
+
+  (:obj_of_interest
+    chefmate_8_frypan_1
+    wine_bottle_1
+    white_yellow_mug_1
+    wooden_tray_1
+  )
+
+  (:init
+    (On chefmate_8_frypan_1 coffee_table_chefmate_8_frypan_init_region)
+    (On wooden_tray_1 coffee_table_wooden_tray_init_region)
+    (On wine_bottle_1 coffee_table_wine_bottle_init_region)
+    (On white_yellow_mug_1 coffee_table_white_yellow_mug_init_region)
+  )
+
+  (:goal
+    (And 
+        (On wine_bottle_1 coffee_table_wine_bottle_init_region) 
+    )
+  )
+)

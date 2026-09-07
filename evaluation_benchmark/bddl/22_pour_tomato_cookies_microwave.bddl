@@ -1,0 +1,87 @@
+(define (problem LIBERO_Coffee_Table_Manipulation)
+  (:domain robosuite)
+  (:language Prepare a microwaved snack bowl  )
+    (:regions
+      (microwave_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.02 0.53 0.02 0.5700000000000001)
+            )
+          )
+          (:yaw_rotation (
+              (6.283185307179586 6.283185307179586)
+            )
+          )
+      )
+
+      (cookies_init_region
+          (:target coffee_table)
+          (:ranges (
+              (0.14719133415004915 -0.21541956553388293 0.18719133415004913 -0.17541956553388292)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (tomato_sauce_init_region
+          (:target coffee_table)
+          (:ranges (
+              (-0.05280866584995085 -0.21541956553388293 -0.01280866584995085 -0.17541956553388292)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (table_region
+          (:target coffee_table)
+          (:ranges (
+              (-2 -2 2 2)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (top_side
+          (:target microwave_1)
+      )
+      (heating_region
+          (:target microwave_1)
+      )
+    )
+
+  (:fixtures
+    coffee_table - coffee_table
+    microwave_1 - microwave
+  )
+
+  (:objects
+    cookies_1 - cookies
+    tomato_sauce_1 - tomato_sauce
+  )
+
+  (:obj_of_interest
+    tomato_sauce_1
+    cookies_1
+    microwave_1
+  )
+
+  (:init
+    (On microwave_1 coffee_table_microwave_init_region)
+    (On cookies_1 coffee_table_cookies_init_region)
+    (On tomato_sauce_1 coffee_table_tomato_sauce_init_region)
+  )
+
+  (:goal
+    (And 
+        (In tomato_sauce_1 microwave_1_heating_region) 
+        (In cookies_1 microwave_1_heating_region) 
+    )
+  )
+
+)
