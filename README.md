@@ -1,7 +1,7 @@
 # SimpleMemVLA
 
-> **项目已迁移至 [OpenBMB/SimpleMemVLA](https://github.com/OpenBMB/SimpleMemVLA)。**
+> **This project has moved to [OpenBMB/SimpleMemVLA](https://github.com/OpenBMB/SimpleMemVLA).**
 
-## [点击前往正式仓库 →](https://github.com/OpenBMB/SimpleMemVLA)
+## [Visit the official repository →](https://github.com/OpenBMB/SimpleMemVLA)
 
-本仓库仅保留迁移提示。请前往正式仓库获取最新代码、文档与更新，并在那里提交 Issue 或 Pull Request。
+This repository is kept only as a migration notice. Please visit the official repository for the latest code, documentation, and updates, and submit issues or pull requests there.
